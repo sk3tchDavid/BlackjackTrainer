@@ -7,6 +7,7 @@
     <title>Blackjack Counting Training</title>
 </head>
 <body>
+    <a href="../index.html" class="home-button">Home</a>
     <div class="container">
         <h1>Counting Training</h1>
         <div id="deckSelection">
@@ -38,6 +39,13 @@
             <div id="currentCard"></div>
             <div id="cardsRemaining" style="position: absolute; top: 10px; right: 10px;"></div>
             <button onclick="stopTraining()">Stop Training</button>
+        </div>
+        <div id="runningCountContainer" style="display:none;">
+            <h2>What is your running count?</h2>
+            <input type="number" id="userRunningCount">
+            <button onclick="checkRunningCount()">Submit</button>
+            <p id="actualRunningCount"></p>
+            <p id="resultMessage"></p>
         </div>
     </div>
     <script src="script.js"></script>
