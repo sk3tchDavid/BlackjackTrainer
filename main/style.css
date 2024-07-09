@@ -15,17 +15,19 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    position: relative; /* Damit der Home-Button relativ zur .container positioniert wird */
 }
 
 button {
-    margin: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
+    margin: 10px;
+    padding: 12px 24px;
+    font-size: 18px;
     border: none;
     border-radius: 4px;
     background-color: #007bff;
     color: white;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
@@ -34,27 +36,19 @@ button:hover {
 
 .home-button {
     position: absolute;
-    top: 10px;
-    left: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
+    top: 20px;
+    left: 20px;
+    margin: 10px;
+    padding: 12px 24px;
+    font-size: 18px;
     border: none;
     border-radius: 4px;
     background-color: #007bff;
     color: white;
-    text-decoration: none;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.home-button:hover {
-    background-color: #0056b3;
-}
-
-#cardsRemaining {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-#runningCountContainer {
+#gameContainer {
     margin-top: 20px;
 }
