@@ -52,3 +52,7 @@ button:hover {
 #gameContainer {
     margin-top: 20px;
 }
+
+#currentCard{
+    position: relative;
+}
