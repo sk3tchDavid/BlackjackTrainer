@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Blackjack Counting Training</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Counting Training</h1>
+        <div id="deckSelection">
+            <h2>Select Number of Decks</h2>
+            <button onclick="setDecks(1)">1</button>
+            <button onclick="setDecks(2)">2</button>
+            <button onclick="setDecks(4)">4</button>
+            <button onclick="setDecks(6)">6</button>
+            <button onclick="setDecks(8)">8</button>
+        </div>
+        <div id="cardSelection" style="display:none;">
+            <h2>Select Percentage of Cards</h2>
+            <button onclick="setCards(25)">25%</button>
+            <button onclick="setCards(50)">50%</button>
+            <button onclick="setCards(75)">75%</button>
+            <button onclick="setCards(100)">100%</button>
+        </div>
+        <div id="speedSelection" style="display:none;">
+            <h2>Select Speed (seconds per card)</h2>
+            <button onclick="setSpeed(0.5)">0.5</button>
+            <button onclick="setSpeed(1)">1</button>
+            <button onclick="setSpeed(2)">2</button>
+            <button onclick="setSpeed(3)">3</button>
+            <button onclick="setSpeed(4)">4</button>
+            <button onclick="setSpeed(5)">5</button>
+        </div>
+        <div id="cardDisplay" style="display:none;">
+            <h2>Card Display</h2>
+            <div id="currentCard"></div>
+            <div id="cardsRemaining" style="position: absolute; top: 10px; right: 10px;"></div>
+            <button onclick="stopTraining()">Stop Training</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
